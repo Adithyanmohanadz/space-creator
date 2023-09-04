@@ -116,111 +116,125 @@
 
 <style>
     .demo {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.demo::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 80%;
-  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
-  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
-}
-.demo h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font : normal 300 64px/1 'Josefin Sans', sans-serif;
-  text-align: center;
-  white-space: nowrap;
-}
-.demo a {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  z-index: 2;
-  display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  color: rgb(0, 0, 0);
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
-  letter-spacing: .1em;
-  text-decoration: none;
-  transition: opacity .3s;
-}
-.demo a:hover {
-  opacity: .5;
-}
-
-#section07 a {
-  padding-top: 80px;
-}
-#section07 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid rgb(0, 0, 0);
-  border-bottom: 1px solid rgb(0, 0, 0);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb07 2s infinite;
-  animation: sdb07 2s infinite;
-  opacity: 0;
-  box-sizing: border-box;
-}
-#section07 a span:nth-of-type(1) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-#section07 a span:nth-of-type(2) {
-  top: 16px;
-  -webkit-animation-delay: .15s;
-  animation-delay: .15s;
-}
-#section07 a span:nth-of-type(3) {
-  top: 32px;
-  -webkit-animation-delay: .3s;
-  animation-delay: .3s;
-}
-@-webkit-keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@media (max-width:991px) {
-    .demo{
-        display: none !important;
+        position: relative;
+        width: 100%;
+        height: 100%;
     }
-}
 
+    .demo::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 80%;
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .8) 80%, rgba(0, 0, 0, .8) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .8) 80%, rgba(0, 0, 0, .8) 100%);
+    }
+
+    .demo h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font: normal 300 64px/1 'Josefin Sans', sans-serif;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .demo a {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        z-index: 2;
+        display: inline-block;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        color: rgb(0, 0, 0);
+        font: normal 400 20px/1 'Josefin Sans', sans-serif;
+        letter-spacing: .1em;
+        text-decoration: none;
+        transition: opacity .3s;
+    }
+
+    .demo a:hover {
+        opacity: .5;
+    }
+
+    #section07 a {
+        padding-top: 80px;
+    }
+
+    #section07 a span {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 24px;
+        height: 24px;
+        margin-left: -12px;
+        border-left: 1px solid rgb(0, 0, 0);
+        border-bottom: 1px solid rgb(0, 0, 0);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: sdb07 2s infinite;
+        animation: sdb07 2s infinite;
+        opacity: 0;
+        box-sizing: border-box;
+    }
+
+    #section07 a span:nth-of-type(1) {
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+    }
+
+    #section07 a span:nth-of-type(2) {
+        top: 16px;
+        -webkit-animation-delay: .15s;
+        animation-delay: .15s;
+    }
+
+    #section07 a span:nth-of-type(3) {
+        top: 32px;
+        -webkit-animation-delay: .3s;
+        animation-delay: .3s;
+    }
+
+    @-webkit-keyframes sdb07 {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes sdb07 {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @media (max-width:991px) {
+        .demo {
+            display: none !important;
+        }
+    }
 </style>
 
 <body class=" bg-white">
@@ -237,14 +251,13 @@
 
                 <nav class="navbar navbar-expand-lg   z-index-3 py-0">
                     <div class="container">
-                        <a class="navbar-brand " href="index.html" rel="tooltip" title="Designed and Coded by Creative Tim"
-                            data-placement="bottom" target="_blank">
+                        <a class="navbar-brand " href="index.html" rel="tooltip"
+                            title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
                             <h5 class="display-4 tlogo">Space Creater</h5>
                         </a>
 
-                        <a href="index.html"
-                            class="svgimg mb-0 ms-auto d-block" style="margin: inherit;"><svg class="svgimg" width="50"
-                                height="50" viewBox="0 0 24 24">
+                        <a href="index.html" class="svgimg mb-0 ms-auto d-block" style="margin: inherit;"><svg
+                                class="svgimg" width="50" height="50" viewBox="0 0 24 24">
                                 <path
                                     d="M18.6,6.62C17.16,6.62 15.8,7.18 14.83,8.15L7.8,14.39C7.16,15.03 6.31,15.38 5.4,15.38C3.53,15.38 2,13.87 2,12C2,10.13 3.53,8.62 5.4,8.62C6.31,8.62 7.16,8.97 7.84,9.65L8.97,10.65L10.5,9.31L9.22,8.2C8.2,7.18 6.84,6.62 5.4,6.62C2.42,6.62 0,9.04 0,12C0,14.96 2.42,17.38 5.4,17.38C6.84,17.38 8.2,16.82 9.17,15.85L16.2,9.61C16.84,8.97 17.69,8.62 18.6,8.62C20.47,8.62 22,10.13 22,12C22,13.87 20.47,15.38 18.6,15.38C17.7,15.38 16.84,15.03 16.16,14.35L15,13.34L13.5,14.68L14.78,15.8C15.8,16.81 17.15,17.37 18.6,17.37C21.58,17.37 24,14.96 24,12C24,9 21.58,6.62 18.6,6.62Z">
                                 </path>
@@ -326,36 +339,36 @@
         <div class="px-3">
             <div class="row align-items-center">
 
-                
-                <div class="col-md-6 px-7 mt-8 mb-auto">
+
+                <div class="col-md-6 px-lg-5 px-3 mt-lg-8 mt-3 mb-auto">
                     <!-- <hr class="hr-line" style="margin-left: auto;"> -->
                     <h3 class="text-dark mb-3 text-end display-1">project 1</h3>
                     <p class="mb-4">
                         Technology is applied science. Science is the study of nature. Mathematics is the language
                         of nature. Philosophy is the root of mathematics. All tightly interrelated.
-                       
+
                     </p>
                     <p class="font-weight-bold"><span class="me-2">-</span> Showcase and embed your work with</p>
-              <p class="font-weight-bold"><span class="me-2">-</span> Publish across social channels in a
-                  click</p>
-              <p class="font-weight-bold"><span class="me-2">-</span> Sell your videos worldwide</p>
-              <p class="font-weight-bold mb-5"><span class="me-2">-</span> Make more profit</p>
-              
+                    <p class="font-weight-bold"><span class="me-2">-</span> Publish across social channels in a
+                        click</p>
+                    <p class="font-weight-bold"><span class="me-2">-</span> Sell your videos worldwide</p>
+                    <p class="font-weight-bold mb-5"><span class="me-2">-</span> Make more profit</p>
 
-              <section id="section07" class="demo " style="margin-top: 40%;">
-                <a href="#plan">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Scroll
-                </a>
-              </section>
+
+                    <section id="section07" class="demo " style="margin-top: 40%;">
+                        <a href="#plan">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Scroll
+                        </a>
+                    </section>
 
                 </div>
                 <div class="col-md-6">
                     <div class="card p-0 border-radius-lg">
                         <div class="blur-shadow-image ">
-                            <img src="./assets/img/bg11.jpg"img-blur-shadow" class="img-fluid " loading="lazy">
+                            <img src="./assets/img/bg11.jpg" img-blur-shadow class="img-fluid " loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -370,14 +383,14 @@
                 <div class="col-md-6">
                     <div class="card p-0 border-radius-lg">
                         <div class="blur-shadow-image ">
-                            <img src="./assets/img/dami/6.jpg"img-blur-shadow" class="img-fluid " loading="lazy">
+                            <img src="./assets/img/dami/6.jpg" img-blur-shadow class="img-fluid " loading="lazy">
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 px-4 mt-8 mb-auto">
+                <div class="col-md-6 px-lg-5 px-3 mt-lg-8 my-3 mb-auto">
                     <!-- <hr class="hr-line" style="margin-left: auto;"> -->
                     <!-- <h3 class="text-dark mb-3 text-end display-1">project 1</h3> -->
-                    <p class="mb-4 px-6">
+                    <p class="mb-4 ">
                         Technology is applied science. Science is the study of nature. Mathematics is the language
                         of nature. Philosophy is the root of mathematics. All tightly interrelated.
                         Technology is applied science. Science is the study of nature. Mathematics is the language
@@ -387,14 +400,14 @@
                         Technology is applied science. Science is the study of nature. Mathematics is the language
                         of nature. Philosophy is the root of mathematics. All tightly interrelated.
                     </p>
-                    
+
                 </div>
             </div>
         </div>
     </section>
 
     <section class="py-5">
-        
+
         <div class="container-fluid mt-5">
             <div class="row">
                 <div class="col-md-12">
@@ -402,9 +415,7 @@
                         <div class="col-md-4">
                             <a href="">
                                 <div class="card ">
-                                    <img class="w-100"
-                                        src="assets/img/dami/7.jpg"
-                                        loading="lazy" alt="coworking">
+                                    <img class="w-100" src="assets/img/dami/7.jpg" loading="lazy" alt="coworking">
                                 </div>
                                 <div class="mt-2 ms-2">
                                     <h6 class="mb-0">name</h6>
@@ -414,9 +425,7 @@
                         <div class="col-md-4 mt-md-0 mt-5">
                             <a href="">
                                 <div class="card ">
-                                    <img class="w-100"
-                                        src="assets/img/dami/8.jpg"
-                                        loading="lazy" alt="rental">
+                                    <img class="w-100" src="assets/img/dami/8.jpg" loading="lazy" alt="rental">
                                 </div>
                                 <div class="mt-2 ms-2">
                                     <h6 class="mb-0">name</h6>
@@ -426,9 +435,7 @@
                         <div class="col-md-4 mt-md-0 mt-5">
                             <a href="">
                                 <div class="card ">
-                                    <img class="w-100"
-                                        src="assets/img/dami/9.jpg"
-                                        loading="lazy" alt="case-study">
+                                    <img class="w-100" src="assets/img/dami/9.jpg" loading="lazy" alt="case-study">
                                 </div>
                                 <div class="mt-2 ms-2">
                                     <h6 class="mb-0">name</h6>
@@ -436,9 +443,9 @@
                             </a>
                         </div>
                     </div>
-                    
+
                 </div>
-                
+
             </div>
         </div>
 
@@ -449,9 +456,7 @@
                         <div class="col-md-4">
                             <a href="">
                                 <div class="card ">
-                                    <img class="w-100"
-                                        src="assets/img/dami/10.jpg"
-                                        loading="lazy" alt="coworking">
+                                    <img class="w-100" src="assets/img/dami/10.jpg" loading="lazy" alt="coworking">
                                 </div>
                                 <div class="mt-2 ms-2">
                                     <h6 class="mb-0">name</h6>
@@ -461,9 +466,7 @@
                         <div class="col-md-4 mt-md-0 mt-5">
                             <a href="">
                                 <div class="card ">
-                                    <img class="w-100"
-                                        src="assets/img/dami/11.jpg"
-                                        loading="lazy" alt="rental">
+                                    <img class="w-100" src="assets/img/dami/11.jpg" loading="lazy" alt="rental">
                                 </div>
                                 <div class="mt-2 ms-2">
                                     <h6 class="mb-0">name</h6>
@@ -473,9 +476,7 @@
                         <div class="col-md-4 mt-md-0 mt-5">
                             <a href="">
                                 <div class="card ">
-                                    <img class="w-100"
-                                        src="assets/img/dami/12.jpg"
-                                        loading="lazy" alt="case-study">
+                                    <img class="w-100" src="assets/img/dami/12.jpg" loading="lazy" alt="case-study">
                                 </div>
                                 <div class="mt-2 ms-2">
                                     <h6 class="mb-0">name</h6>
@@ -483,9 +484,9 @@
                             </a>
                         </div>
                     </div>
-                    
+
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -497,13 +498,15 @@
                 <div class="row">
                     <div class="col-lg-7 text-center mx-auto">
                         <h1 class="text-white pt-3 mt-n5">Space Creater</h1>
-                        <p class="lead text-white mt-3 px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolore quae quo quos sit deserunt ratione a obcaecati blanditiis officia! Tempora rem deserunt vero, quam sequi consequuntur! Minima, labore obcaecati.</p>
+                        <p class="lead text-white mt-3 px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vel dolore quae quo quos sit deserunt ratione a obcaecati blanditiis officia! Tempora rem
+                            deserunt vero, quam sequi consequuntur! Minima, labore obcaecati.</p>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-   
+
     <!-- contact section -->
     <section class="pt-3 pb-4 bg-white" id="contact">
         <div class="midd-w3 py-5">
